@@ -1,79 +1,80 @@
-Hotel-booking-prediction-and-reservation-analysis-1
-
 # Hotel Booking Cancellation Prediction and Reservation Analysis System
 
 ## Project Overview
 
-The Hotel Booking Cancellation Prediction and Reservation Analysis System is a Machine Learning project that aims to predict whether a hotel booking will be canceled or not.
+The **Hotel Booking Cancellation Prediction and Reservation Analysis System** is a machine learning project designed to predict whether a hotel booking is likely to be cancelled and provide insights into hotel reservation data through an interactive dashboard.
 
-The project uses historical hotel booking data to identify cancellation patterns and build classification models that can help understand booking behavior.
+The project combines a machine learning prediction model with data visualization to help understand booking patterns and cancellation trends.
 
-## Dataset Description
+## Project Objectives
 
-- Dataset: Hotel Booking Demand
-- Original records: 119,390
-- Original features: 32
-- Target variable: `is_canceled`
+- Predict hotel booking cancellations using machine learning.
+- Analyze hotel reservation patterns.
+- Understand cancellation rates across different hotel types.
+- Visualize customer types and market segments.
+- Present booking insights through an interactive dashboard.
 
-Target classes:
-- `0` – Booking not canceled
-- `1` – Booking canceled
+## Key Features
+
+### 1. Booking Cancellation Prediction
+
+- Accepts booking details through an interactive form.
+- Uses a trained machine learning model to predict cancellation.
+- Displays cancellation and non-cancellation probabilities.
+
+### 2. Reservation Analysis Dashboard
+
+- Booking overview with key performance metrics.
+- Monthly booking trends.
+- Hotel type booking distribution.
+- Market segment analysis.
+- Customer type distribution.
+- Booking cancellation distribution.
+- Cancellation rate by hotel type.
+
+### 3. Interactive Dashboard
+
+- Built using Streamlit.
+- Dark-themed dashboard interface.
+- Visualizations created using Matplotlib and Seaborn.
+- Separate navigation for prediction and reservation analysis.
 
 ## Technologies Used
 
 - Python
 - Pandas
 - NumPy
+- Scikit-learn
 - Matplotlib
 - Seaborn
-- Scikit-learn
-- Jupyter Notebook
-- Streamlit (planned for deployment)
+- Joblib
+- Streamlit
 
 ## Project Workflow
 
-1. Dataset collection
-2. Data exploration and analysis
-3. Data cleaning and preprocessing
-4. Handling missing values
-5. Duplicate and outlier analysis
-6. Train-test splitting
-7. Categorical feature encoding
-8. Feature scaling for Logistic Regression
-9. Model training
-10. Model evaluation
-11. Hyperparameter tuning
-12. Model selection
-13. Streamlit deployment (planned)
+1. Dataset Collection
+2. Data Cleaning and Preprocessing
+3. Exploratory Data Analysis (EDA)
+4. Feature Encoding
+5. Model Training and Evaluation
+6. Model and Encoder Saving
+7. Streamlit Application Development
+8. Booking Cancellation Prediction
+9. Reservation Analysis Dashboard
 
-## Machine Learning Algorithms
 
-The following classification algorithms have been implemented:
+## Expected Output
 
-- Logistic Regression
-- Decision Tree Classifier
-- Random Forest Classifier
+The application provides:
 
-Further hyperparameter tuning and class imbalance experiments are in progress.
+- Booking cancellation predictions.
+- Cancellation probability percentages.
+- Reservation statistics.
+- Interactive charts and booking insights.
 
-## Evaluation Metrics
+## Project Status
 
-- Accuracy
-- Precision
-- Recall
-- F1-score
-- Confusion Matrix
+**Development in Progress**
 
-## Current Project Status
+The machine learning model, prediction functionality, and reservation analysis dashboard are being developed as part of this project.
 
-- Data preprocessing: Completed
-- Model training: Completed
-- Initial model comparison: Completed
-- Hyperparameter tuning: In progress
-- Class imbalance experiments: In progress
-- Final model selection: Pending
-- Streamlit deployment: Pending
-
-## Project Goal
-
-The goal is to develop a reliable machine learning model that predicts hotel booking cancellations and present the predictions through a user-friendly web application.
