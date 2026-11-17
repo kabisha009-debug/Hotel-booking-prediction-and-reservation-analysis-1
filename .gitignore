@@ -1,0 +1,16 @@
+# Virtual environment
+venv/
+.venv/
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Dataset
+hotel_bookings.csv
+
+# Model files
+*.pkl
+
+# Python cache
+__pycache__/
+*.pyc
