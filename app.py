@@ -548,7 +548,7 @@ if page == "Welcome":
     """, unsafe_allow_html=True)
 
     st.markdown(
-        '<div class="welcome-title">🧳 Welcome to Hotel Booking System</div>',
+        '<div class="welcome-title">🧳 Welcome to Hotel Booking Prediction System</div>',
         unsafe_allow_html=True
     )
 
@@ -850,63 +850,56 @@ elif page == "Cancellation Prediction":
                     f"{probability[0][1] * 100:.2f}%"
                 )
 
+                
+
                 # CANCELLED RESULT
 
                 if prediction[0] == 1:
-
                     st.markdown(
-                        f"""
-                        <div class="result-card">
-
-                            <h3>
-                                ⚠️ Booking is Predicted to be
-                                <span style="color: #5A4212; font-weight: 900; font-size: 28px;">
-                                    CANCELLED
-                                </span>
-                            </h3>
-
-                            <p style="font-size: 19px !important; color: #302719 !important;">
-                                The model predicts that this reservation
-                                may be cancelled.
-                            </p>
-
-                            <h3 style="font-size: 42px !important; color: #5A4212 !important; font-weight: 900 !important;">
-                                {probability[0][1] * 100:.2f}%
-                            </h3>
-
-                            <p>Cancellation Probability</p>
-
-                        </div>
-                        """,
-                        unsafe_allow_html=True
-                    )
-
-                # NOT CANCELLED RESULT
+                    f"""
+<div class="result-card">
+    <h3>
+        ⚠️ Booking is Predicted to be
+        <span style="color: #5A4212; font-weight: 900; font-size: 28px;">
+            CANCELLED
+        </span>
+    </h3>
+    <p style="font-size: 19px !important; color: #302719 !important;">
+        The model predicts that this reservation may be cancelled.
+    </p>
+    <h3 style="font-size: 42px !important; color: #5A4212 !important; font-weight: 900 !important;">
+        {probability[0][1] * 100:.2f}%
+    </h3>
+    <p>Cancellation Probability</p>
+</div>
+""",
+        unsafe_allow_html=True,
+    )
 
                 else:
-
-                    st.markdown(
-                        f"""
-                        <div class="result-card">
-
-                            <h3>✓ Booking is Predicted Not to be Cancelled</h3>
-
-                            <p>
-                            The model predicts that this reservation
-                            may not be cancelled.
-                            </p>
-
-                            <h3>{probability[0][0] * 100:.2f}%</h3>
-
-                        </div>
-                        """,
-                        unsafe_allow_html=True
-                    )
-
-
+                      st.markdown(
+        f"""
+<div class="result-card">
+    <h3>
+        ✓ Booking is Predicted to be
+        <span style="color: #5A4212; font-weight: 900; font-size: 28px;">
+            NOT CANCELLED
+        </span>
+    </h3>
+    <p style="font-size: 19px !important; color: #302719 !important;">
+        The model predicts that this reservation will not be cancelled.
+    </p>
+    <h3 style="font-size: 42px !important; color: #5A4212 !important; font-weight: 900 !important;">
+        {probability[0][0] * 100:.2f}%
+    </h3>
+    <p>Confirmation Probability</p>
+</div>
+""",
+        unsafe_allow_html=True,
+    )
 # ==================================================
 # PAGE 3: RESERVATION ANALYSIS
-# ==================================================
+# ===============================================
 
 elif page == "Reservation Analysis":
 
